@@ -43,17 +43,11 @@ Here is an exploratory visualization of the training data set. It is a bar chart
 
 ###Design and Test a Model Architecture
 
-####1. The code for this project is built based on the code provide for LeNet-Lab. Before definind the model architecture, the images are preprocessed using grayscale conversion and normalization techniques. As a first step, I decided to convert the images to grayscale because the classification of traffic signs is mostly dependent on the features and edges in an image and is independent of the color of the traffic sign. Hence, the unnecessary color information is avoided by converting the colored images to grayscale. In the second step, images are converted to grayscale as mormalization of the data makes it easier for the  optimizer to find a good solution. Normalization of the image dataset is done by subtracting and diving each pixel value by 128. the as Describe how you preprocessed the image data.
+####1. The code for this project is built based on the code provide for LeNet-Lab. Before definind the model architecture, the images are preprocessed using grayscale conversion and normalization techniques. As a first step, I decided to convert the images to grayscale because the classification of traffic signs is mostly dependent on the features and edges in an image and is independent of the color of the traffic sign. Hence, the unnecessary color information is avoided by converting the colored images to grayscale. In the second step, images are converted to grayscale as mormalization of the data makes it easier for the  optimizer to find a good solution. Normalization of the image dataset is done by subtracting and diving each pixel value by 128. 
 
 Here is an example of a traffic sign image before and after grayscaling.
 
 ![alt text][image2]
-
-As a last step, I normalized the image data because ...
-
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
 
 Here is an example of an original image and an augmented image:
 
@@ -62,9 +56,7 @@ Here is an example of an original image and an augmented image:
 The difference between the original data set and the augmented data set is the following ... 
 
 
-####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
-
-My final model consisted of the following layers:
+####2. My final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -81,22 +73,28 @@ My final model consisted of the following layers:
 | Fully connected		| outputs 200        									|
 | dropout            |  keep_probability=0.5 (training), keep_probability=0.1 (testing)   |
 | Fully connected		| outputs 43        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
+| Softmax				|      									|
  
-
 
 ####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
+| Layer         		|     Description	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| EPOCHS        		| 45   							| 
+| Batch size       		| 128  							| 
+| learning rate        		| 0.0097  							| 
+| mean        		| 0   							| 
+| standard deviation       		| 0.08  							| 
+
+Before training the model, tensorflow variables 'x' and 'y' are set. Placeholder 'x' stores input batches and placeholder 'y' stores labels. Then, the labels are one-hot encoded using 'tf.one_hot' function, which performs binarization of categories. The ouput logits from model architecture are compared with the ground truth training labels to determine the cross entropy. The average cross entropy of all the images is the loss function which has to be minimized. This minimation is done using Adam optimizer that uses Adam algorithm. Adam optimizer is more sophisticated than stochastic gradient descent method and is a good defalut choice for optimization as suggested in the lectures. Finally, 'minimize' function is used to perform backpropagation and update the training loss. Then, evaluate function is built to evaluate the model prediction accuracy. Following this, model is trained and validated over the number of EPOCHS specified. Also, data is shuffled before the starting of this process to make it representative of the overall distribution of data and avoid repetation. 
 To train the model, I used an ....
 
 ####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of 1.00
+* validation set accuracy of 0.995 
+* test set accuracy of 0.96
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
