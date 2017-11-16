@@ -43,7 +43,7 @@ Here is an exploratory visualization of the training, validation and test data s
 
 ![alt text][image2]
 
-Design and Test a Model Architecture
+*Designing and Testing a Model Architecture*
 
 1. The code for this project is built based on the code provide for LeNet-Lab. Before definind the model architecture, the images are preprocessed using grayscale conversion and normalization techniques. As a first step, I decided to convert the images to grayscale because the classification of traffic signs is mostly dependent on the features and edges in an image and is independent of the color of the traffic sign. Hence, the unnecessary color information is avoided by converting the colored images to grayscale. In the second step, images are converted to grayscale as mormalization of the data makes it easier for the  optimizer to find a good solution. Normalization of the image dataset is done by subtracting and diving each pixel value by 128. 
 
@@ -88,7 +88,7 @@ My final model results were:
 * validation set accuracy of 0.995 
 * test set accuracy of 0.96
 
-Test a Model on New Images
+*Testing the Model on New Images*
 
 1. I chose nine different German traffic signs from web and tested them on my model to check the prediction accuracy. This data set includes images from following classes
 
