@@ -40,7 +40,7 @@ I calculated summary statistics of the traffic signs data set:
 
 Here is an exploratory visualization of the training, validation and test data sets. It is a bar chart showing how the data is distributed across various classes.
 
-![alt text][image2]
+![alt text][./prediction_1.jpg]
 
 *Designing and Testing a Model Architecture*
 
