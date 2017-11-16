@@ -9,16 +9,14 @@ The goals / steps of this project are the following:
 * Using the model to make predictions on new images
 * Analyzing the softmax probabilities of the new images
 
-[//]: # (Image References)
-
 [image1]: ./Data and classes.png "Training images along with their class ID's"
 [image2]: ./data_visualization.png "Visualization"
 [image3]: ./my_test_images.png "New test images"
 [image4]: ./prediction_1.jpg "Softmax predictions for test image 1"
-[image5]: ./prediction_2.jpg "Softmax prediction for test image 2"
-[image6]: ./prediction_3.jpg "Softmax prediction for test image 3"
-[image7]: ./prediction_4.jpg "Softmax prediction for test image 4"
-[image8]: ./prediction_5.jpg "Softmax prediction for test image 5"
+[image5]: ./prediction_2.jpg "Softmax predictions for test image 2"
+[image6]: ./prediction_3.jpg "Softmax predictions for test image 3"
+[image7]: ./prediction_4.jpg "Softmax predictions for test image 4"
+[image8]: ./prediction_5.jpg "Softmax predictions for test image 5"
 
 ---
 
