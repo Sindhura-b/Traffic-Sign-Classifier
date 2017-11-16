@@ -11,7 +11,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./Data and classes.png "Training data along with their class ID"
+[image1]: ./Data and classes.png "Training images along with their class ID's"
 [image2]: ./data_visualization.png "Visualization"
 [image3]: ./my_test_images.png "New test images"
 [image4]: ./prediction_1.jpg "Softmax predictions for test image 1"
