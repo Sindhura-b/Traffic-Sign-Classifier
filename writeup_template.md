@@ -10,22 +10,24 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image1]: ./Data and classes.png "Training data along with their class ID"
+[image2]: ./data_visualization.png "Visualization"
+[image3]: ./my_test_images.png "New test images"
+[image4]: ./prediction_1.jpg "Softmax predictions for test image 1"
+[image5]: ./prediction_2.jpg "Softmax prediction for test image 2"
+[image6]: ./prediction_3.jpg "Softmax prediction for test image 3"
+[image7]: ./prediction_4.jpg "Softmax prediction for test image 4"
+[image8]: ./prediction_5.jpg "Softmax prediction for test image 5"
 
 ---
 
 You're reading it! and here is a link to my [project code](https://github.com/Sindhura-b/Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.ipynb)
 
-###Data Set Summary & Exploration
+Data Set Summary & Exploration
 
-####1. German traffic sign data is used in this project. It consists of 32x32 colored images belonging to 43 types of german traffic signs. The analysis of the dataset is done using numpy library rather than hardcoding manually. 
+1. German traffic sign data is used in this project. It consists of 32x32 colored images belonging to 43 types of german traffic signs. The analysis of the dataset is done using numpy library rather than hardcoding manually. Below are some random images picked from the training data set and their respective class ID's.
+
+![alt text][image1]
 
 I calculated summary statistics of the traffic signs data set:
 
@@ -35,26 +37,15 @@ I calculated summary statistics of the traffic signs data set:
 * The shape of a traffic sign image is 32x32
 * The number of unique classes/labels in the data set is 43
 
-####2. Include an exploratory visualization of the dataset.
+2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the training data set. It is a bar chart showing how the data ...
-
-![alt text][image1]
-
-###Design and Test a Model Architecture
-
-####1. The code for this project is built based on the code provide for LeNet-Lab. Before definind the model architecture, the images are preprocessed using grayscale conversion and normalization techniques. As a first step, I decided to convert the images to grayscale because the classification of traffic signs is mostly dependent on the features and edges in an image and is independent of the color of the traffic sign. Hence, the unnecessary color information is avoided by converting the colored images to grayscale. In the second step, images are converted to grayscale as mormalization of the data makes it easier for the  optimizer to find a good solution. Normalization of the image dataset is done by subtracting and diving each pixel value by 128. 
-
-Here is an example of a traffic sign image before and after grayscaling.
+Here is an exploratory visualization of the training, validation and test data sets. It is a bar chart showing how the data is distributed across various classes.
 
 ![alt text][image2]
 
-Here is an example of an original image and an augmented image:
+Design and Test a Model Architecture
 
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
-
+1. The code for this project is built based on the code provide for LeNet-Lab. Before definind the model architecture, the images are preprocessed using grayscale conversion and normalization techniques. As a first step, I decided to convert the images to grayscale because the classification of traffic signs is mostly dependent on the features and edges in an image and is independent of the color of the traffic sign. Hence, the unnecessary color information is avoided by converting the colored images to grayscale. In the second step, images are converted to grayscale as mormalization of the data makes it easier for the  optimizer to find a good solution. Normalization of the image dataset is done by subtracting and diving each pixel value by 128. 
 
 ####2. My final model consisted of the following layers:
 
@@ -103,13 +94,17 @@ My final model results were:
 
 Here are nine German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image3] 
 
-####2. This new data set is also preprocessed before starting training and validation. The model was able to guess 9 of the 9 traffic signs, which gave a test accuracy of 1.0. 
-Here are the results of the prediction:
-
-
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This shows that the model performed very well on this new test set compared to the previous test set.
+####2. This new data set is also preprocessed before starting training and validation. The model was able to guess 9 of the 9 traffic signs, which gave a test accuracy of 1.0. The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This shows that the model performed very well on this new test set compared to the previous test set.
 
 ####3. The top five soft-max predictions show that the model was able to predict the classes of the images in data set with 1.00 accuracy. The other four closest predictions are shown in code/html document.
+
+Here are top five softmax predictions for 5 German traffic sign images:
+
+![alt text][image4] ![alt text][image5] 
+
+![alt text][image6] ![alt text][image7] 
+
+![alt text][image8] 
+
