@@ -14,11 +14,11 @@ The goals / steps of this project are the following:
 [image1]: ./Data_and_classes.png "Training images along with their class ID"
 [image2]: ./data_visualization.png "Visualization"
 [image3]: ./my_test_images.png "New test images"
-[image4]: ./prediction_1.jpg "Softmax predictions for test image 1"
-[image5]: ./prediction_2.jpg "Softmax predictions for test image 2"
-[image6]: ./prediction_3.jpg "Softmax predictions for test image 3"
-[image7]: ./prediction_4.jpg "Softmax predictions for test image 4"
-[image8]: ./prediction_5.jpg "Softmax predictions for test image 5"
+[image4]: ./prediction_1.JPG "Softmax predictions for test image 1"
+[image5]: ./prediction_2.JPG "Softmax predictions for test image 2"
+[image6]: ./prediction_3.JPG "Softmax predictions for test image 3"
+[image7]: ./prediction_4.JPG "Softmax predictions for test image 4"
+[image8]: ./prediction_5.JPG "Softmax predictions for test image 5"
 
 ---
 
@@ -27,6 +27,8 @@ You're reading it! and here is a link to my [project code](https://github.com/Si
 *Data Set Summary & Exploration*
 
 1. German traffic sign data is used in this project. It consists of 32x32 colored images belonging to 43 types of german traffic signs. The analysis of the dataset is done using numpy library rather than hardcoding manually. Below are some random images picked from the training data set and their respective class ID's.
+
+![Alt Text][image1]
 
 I calculated summary statistics of the traffic signs data set:
 
