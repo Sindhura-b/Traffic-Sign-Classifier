@@ -9,6 +9,8 @@ The goals / steps of this project are the following:
 * Using the model to make predictions on new images
 * Analyzing the softmax probabilities of the new images
 
+[//]: # (Image References)
+
 [image1]: Data and classes.png "Training images along with their class ID's"
 [image2]: ./data_visualization.png "Visualization"
 [image3]: ./my_test_images.png "New test images"
@@ -40,7 +42,7 @@ I calculated summary statistics of the traffic signs data set:
 
 Here is an exploratory visualization of the training, validation and test data sets. It is a bar chart showing how the data is distributed across various classes.
 
-![alt text][./prediction_1.jpg]
+![Alt Text][image2]
 
 *Designing and Testing a Model Architecture*
 
