@@ -67,7 +67,7 @@ Here is an exploratory visualization of the training, validation and test data s
 | Fully connected		| outputs 43        									|
 | Softmax				|      									|
  
-
+ 
 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
 | Layer         		|     Description	        					| 
